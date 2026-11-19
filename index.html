@@ -1,11 +1,1173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https:// https://ais-dev-grzbiomzlv3dutcwf63ypg-650936582116.us-east1.run.app">
-  <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>axeon3 — Links &amp; Project Directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      --bg-base: #181825;
+      --bg-surface: #1e1e2e;
+      --bg-overlay: #242538;
+      --border-subtle: #313244;
+      --text-primary: #cdd6f4;
+      --text-secondary: #a6adc8;
+      --accent-blue: #89b4fa;
+      --accent-mauve: #cba6f7;
+      --accent-green: #a6e3a1;
+      --accent-peach: #fab387;
+      --accent-teal: #94e2d5;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+    }
+    code, pre, .font-mono {
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    .card-surface {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+    .card-surface:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-blue);
+      box-shadow: 0 10px 24px -10px rgba(137, 180, 250, 0.2);
+    }
+    .pill-active {
+      background-color: var(--accent-blue);
+      color: #11111b;
+      border-color: var(--accent-blue);
+    }
+    .pill-inactive {
+      background-color: var(--bg-surface);
+      color: var(--text-secondary);
+      border-color: var(--border-subtle);
+    }
+    .pill-inactive:hover {
+      border-color: var(--accent-blue);
+      color: var(--text-primary);
+    }
+    #toast {
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    /* Slide-over Drawer Animation */
+    #pqcDrawerBackdrop {
+      transition: opacity 0.22s ease;
+    }
+    #pqcDrawerPanel {
+      transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    /* Custom scrollbar inside drawer */
+    .drawer-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .drawer-scroll::-webkit-scrollbar-track {
+      background: #11111b;
+    }
+    .drawer-scroll::-webkit-scrollbar-thumb {
+      background: #313244;
+      border-radius: 9999px;
+    }
+    .drawer-scroll::-webkit-scrollbar-thumb:hover {
+      background: #45475a;
+    }
+  </style>
 </head>
-<body>
-  <p>If you are not redirected automatically, follow this <a href="https://ais-dev-grzbiomzlv3dutcwf63ypg-650936582116.us-east1.run.app/">link to the new page</a>.</p>
+<body class="antialiased selection:bg-[#89b4fa]/30 selection:text-[#cdd6f4]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+    <!-- Hero / Profile Header -->
+    <header class="card-surface rounded-2xl p-6 sm:p-8 mb-8 relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none opacity-20"
+           style="background: radial-gradient(circle at 85% 15%, #89b4fa 0%, transparent 45%), radial-gradient(circle at 15% 85%, #cba6f7 0%, transparent 45%);"></div>
+
+      <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div class="flex items-start sm:items-center gap-4 sm:gap-5">
+          <!-- Geometric AX3 Emblem -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-[#11111b] border border-[#313244] flex items-center justify-center shrink-0 shadow-lg">
+            <svg viewBox="0 0 64 64" class="w-11 h-11" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="axeon3 emblem">
+              <rect x="4" y="4" width="56" height="56" rx="14" stroke="#89b4fa" stroke-width="2.5"/>
+              <path d="M18 44L28 20L38 44" stroke="#cdd6f4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21.5 36.5H34.5" stroke="#89b4fa" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M41 22L48 29M48 22L41 29" stroke="#cba6f7" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="44.5" cy="40" r="4" stroke="#a6e3a1" stroke-width="2.5"/>
+            </svg>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap items-center gap-2.5">
+              <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-[#cdd6f4]">Acxel Rodriguez</h1>
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#89b4fa]/15 text-[#89b4fa] border border-[#89b4fa]/30">
+                @axeon3
+              </span>
+            </div>
+            <p class="text-sm sm:text-base text-[#a6adc8] mt-1.5 max-w-2xl">
+              Independent Software &amp; Infrastructure Engineer · Systems Architect · Dynamic Coordination &amp; Architecture (<span class="text-[#cdd6f4] font-medium">Team Axe</span>)
+            </p>
+            <div class="flex flex-wrap items-center gap-2 mt-3 text-xs text-[#a6adc8]">
+              <span class="px-2 py-0.5 rounded bg-[#11111b] border border-[#313244]">Post-Quantum Cryptography (FIPS 203/204)</span>
+              <span class="px-2 py-0.5 rounded bg-[#11111b] border border-[#313244]">Multi-Agent (A2A / MCP)</span>
+              <span class="px-2 py-0.5 rounded bg-[#11111b] border border-[#313244]">DevSecOps &amp; CI/CD</span>
+              <span class="px-2 py-0.5 rounded bg-[#11111b] border border-[#313244]">Aerospace &amp; Lunar Telemetry</span>
+              <span class="px-2 py-0.5 rounded bg-[#11111b] border border-[#313244]">NLP / NMT Research</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+          <button id="openPqcDrawerBtn" type="button"
+                  class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#cba6f7]/15 hover:bg-[#cba6f7]/25 text-[#cba6f7] border border-[#cba6f7]/40 hover:border-[#cba6f7] transition cursor-pointer shadow-sm">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            <span>PQC Spec &amp; Tree</span>
+          </button>
+          <button id="copyEmailBtn" type="button"
+                  class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-[#11111b] hover:bg-[#242538] text-[#cdd6f4] border border-[#313244] hover:border-[#89b4fa] transition cursor-pointer">
+            <i data-lucide="mail" class="w-4 h-4 text-[#89b4fa]"></i>
+            <span>Copy Email</span>
+          </button>
+          <button id="copyMarkdownBtn" type="button"
+                  class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-[#11111b] hover:bg-[#242538] text-[#cdd6f4] border border-[#313244] hover:border-[#cba6f7] transition cursor-pointer">
+            <i data-lucide="copy" class="w-4 h-4 text-[#cba6f7]"></i>
+            <span>Copy Markdown</span>
+          </button>
+          <button id="exportJsonBtn" type="button"
+                  class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-[#11111b] hover:bg-[#242538] text-[#cdd6f4] border border-[#313244] hover:border-[#a6e3a1] transition cursor-pointer">
+            <i data-lucide="download" class="w-4 h-4 text-[#a6e3a1]"></i>
+            <span>Export JSON</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search & Filter Controls -->
+    <section class="mb-7 space-y-4">
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+        <div class="relative flex-1 max-w-xl">
+          <i data-lucide="search" class="w-4 h-4 text-[#a6adc8] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+          <input id="searchInput" type="text" placeholder="Filter links, repositories, PQC modules, apps, or tags..."
+                 class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-[#1e1e2e] border border-[#313244] text-sm text-[#cdd6f4] placeholder-[#6c7086] focus:outline-none focus:border-[#89b4fa] transition" />
+          <button id="clearSearchBtn" type="button" aria-label="Clear search"
+                  class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-[#a6adc8] hover:text-[#cdd6f4] cursor-pointer">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+        <div class="text-xs sm:text-sm text-[#a6adc8] font-medium">
+          Showing <span id="visibleCount" class="text-[#cdd6f4] font-semibold">0</span> of <span id="totalCount" class="text-[#cdd6f4] font-semibold">0</span> links
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div id="categoryTabs" class="flex flex-wrap gap-2" role="tablist" aria-label="Link categories">
+        <button type="button" data-cat="all" class="cat-btn pill-active px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">All Links</button>
+        <button type="button" data-cat="pqc" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">Post-Quantum Crypto</button>
+        <button type="button" data-cat="apps" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">Apps &amp; Live Sites</button>
+        <button type="button" data-cat="repos" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">GitHub Repos</button>
+        <button type="button" data-cat="forks" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">Forks &amp; Security</button>
+        <button type="button" data-cat="teamaxe" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">Team Axe &amp; NASA</button>
+        <button type="button" data-cat="community" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">Community &amp; PRs</button>
+        <button type="button" data-cat="contact" class="cat-btn pill-inactive px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium border transition cursor-pointer">Contact &amp; Channels</button>
+      </div>
+    </section>
+
+    <!-- Links Grid -->
+    <main id="linksContainer" class="space-y-8"></main>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="hidden card-surface rounded-2xl p-10 text-center">
+      <i data-lucide="compass" class="w-10 h-10 text-[#6c7086] mx-auto mb-3"></i>
+      <h2 class="text-base font-semibold text-[#cdd6f4]">No matching links found</h2>
+      <p class="text-sm text-[#a6adc8] mt-1">Try clearing your search filter or switching to All Links.</p>
+      <button id="resetFiltersBtn" type="button"
+              class="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium bg-[#89b4fa] text-[#11111b] hover:opacity-90 transition cursor-pointer">
+        Reset Filters
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 pt-6 border-t border-[#313244] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#a6adc8]">
+      <span>axeon3 · Acxel Rodriguez · All verified project &amp; profile links</span>
+      <span>Theme: <code class="text-[#89b4fa]">#181825</code> Dark Navy</span>
+    </footer>
+  </div>
+
+  <!-- Slide-Over Modal Drawer: PQC File Tree & Wire Specification -->
+  <div id="pqcDrawerRoot" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="pqcDrawerTitle">
+    <!-- Backdrop -->
+    <div id="pqcDrawerBackdrop" class="fixed inset-0 bg-[#11111b]/80 backdrop-blur-xs opacity-0"></div>
+
+    <!-- Drawer Panel -->
+    <aside id="pqcDrawerPanel"
+           class="fixed inset-y-0 right-0 w-full max-w-3xl bg-[#181825] border-l border-[#313244] shadow-2xl flex flex-col translate-x-full">
+      <!-- Drawer Header -->
+      <div class="px-6 py-4 bg-[#1e1e2e] border-b border-[#313244] flex items-center justify-between gap-4 shrink-0">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-9 h-9 rounded-xl bg-[#11111b] border border-[#cba6f7]/40 flex items-center justify-center shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5 text-[#cba6f7]"></i>
+          </div>
+          <div class="min-w-0">
+            <h2 id="pqcDrawerTitle" class="text-base sm:text-lg font-bold text-[#cdd6f4] truncate">
+              firestore-pqc-stack · Architecture &amp; Wire Spec
+            </h2>
+            <p class="text-xs text-[#a6adc8] truncate">
+              FIPS 203 (ML-KEM-768) + X25519 + AES-256-GCM · FIPS 204 (ML-DSA-65) + Ed25519
+            </p>
+          </div>
+        </div>
+        <button id="closePqcDrawerBtn" type="button" aria-label="Close drawer"
+                class="p-2 rounded-xl bg-[#11111b] hover:bg-[#242538] text-[#a6adc8] hover:text-[#cdd6f4] border border-[#313244] transition cursor-pointer shrink-0">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Tabs -->
+      <div class="px-6 pt-3 bg-[#1e1e2e]/60 border-b border-[#313244] flex flex-wrap gap-2 shrink-0">
+        <button type="button" data-drawer-tab="tree"
+                class="drawer-tab-btn px-3.5 py-2 text-xs sm:text-sm font-semibold border-b-2 border-[#cba6f7] text-[#cba6f7] transition cursor-pointer">
+          1. Repository File Tree
+        </button>
+        <button type="button" data-drawer-tab="envelope"
+                class="drawer-tab-btn px-3.5 py-2 text-xs sm:text-sm font-medium border-b-2 border-transparent text-[#a6adc8] hover:text-[#cdd6f4] transition cursor-pointer">
+          2. ML-KEM-768 Envelope Wire
+        </button>
+        <button type="button" data-drawer-tab="auth"
+                class="drawer-tab-btn px-3.5 py-2 text-xs sm:text-sm font-medium border-b-2 border-transparent text-[#a6adc8] hover:text-[#cdd6f4] transition cursor-pointer">
+          3. Ed25519 + ML-DSA-65 Auth Wire
+        </button>
+      </div>
+
+      <!-- Drawer Body -->
+      <div class="p-6 overflow-y-auto drawer-scroll flex-1 space-y-6">
+
+        <!-- Tab 1: Repository File Tree -->
+        <div id="drawerTabTree" class="drawer-tab-pane space-y-5">
+          <div class="flex items-center justify-between gap-2">
+            <p class="text-xs sm:text-sm text-[#a6adc8]">
+              Unified 4-layer monorepo combining Cloud KMS Terraform, FastAPI backend, Rust WASM crate, and TypeScript browser bindings.
+            </p>
+            <button type="button" id="copyTreeBtn"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-[#1e1e2e] hover:bg-[#242538] text-[#cdd6f4] border border-[#313244] hover:border-[#cba6f7] transition shrink-0 cursor-pointer">
+              <i data-lucide="copy" class="w-3.5 h-3.5 text-[#cba6f7]"></i>
+              <span>Copy Tree</span>
+            </button>
+          </div>
+
+          <pre id="pqcFileTreeCode" class="p-4 rounded-xl bg-[#11111b] border border-[#313244] text-xs leading-relaxed text-[#cdd6f4] overflow-x-auto">firestore-pqc-stack/
+├── infra/
+│   └── terraform/
+│       ├── main.tf                   # Cloud KMS key rings (ML_KEM_768 + ML_DSA_65) &amp; IAM
+│       ├── variables.tf              # Project ID, region, Firestore service account email
+│       └── outputs.tf                # Exported CryptoKeyVersion resource IDs
+├── backend/
+│   ├── pyproject.toml                # FastAPI, cryptography, google-cloud-kms, crc32c, pytest
+│   ├── app/
+│   │   ├── main.py                   # FastAPI /v1/firestore/seal &amp; Firestore persistence
+│   │   ├── crypto/
+│   │   │   ├── envelope.py           # Hybrid ML-KEM-768 + X25519 + AES-256-GCM decapsulation
+│   │   │   └── hybrid_auth.py        # Strict AND-combiner Ed25519 + ML-DSA-65 verifier
+│   │   └── storage/
+│   │       └── firestore_repo.py     # Document envelope schema &amp; kms_key_version metadata
+│   └── tests/
+│       ├── test_envelope_negative.py # Implicit rejection, AAD swap, &amp; boundary length tests
+│       ├── test_hybrid_auth.py       # Classical/PQ split-tampering &amp; replay window tests
+│       └── test_wasm_interop.py      # Cross-language Node WASM -&gt; Python roundtrip test
+├── wasm-client/
+│   ├── Cargo.toml                    # ml-kem, ml-dsa, x25519-dalek, ed25519-dalek, aes-gcm
+│   ├── src/
+│   │   ├── lib.rs                    # WASM entrypoints &amp; seal_firestore_document()
+│   │   └── auth.rs                   # generate_hybrid_signing_keypair() &amp; sign_http_request()
+│   └── pkg/                          # Compiled wasm-pack --target web output (gitignored)
+├── web/
+│   ├── package.json
+│   └── src/
+│       ├── sealAndPost.ts            # Typed wrapper calling WASM seal + hybrid request sign
+│       └── keyStore.ts               # IndexedDB + non-extractable WebCrypto seed protection
+└── .github/
+    └── workflows/
+        └── pqc-ci.yml                # SHA-256 pinned CI: terraform validate, wasm-pack, pytest</pre>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="p-3.5 rounded-xl bg-[#1e1e2e] border border-[#313244]">
+              <div class="text-xs font-semibold text-[#89b4fa] mb-1">1. infra/terraform → backend</div>
+              <p class="text-xs text-[#a6adc8] leading-relaxed">Provisions HSM/Software <code class="text-[#cdd6f4]">ML_KEM_768</code> &amp; <code class="text-[#cdd6f4]">ML_DSA_65</code> keys with <code class="text-[#cdd6f4]">PREVENT</code> deletion locks and exports <code class="text-[#cdd6f4]">CryptoKeyVersion</code> IDs.</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[#1e1e2e] border border-[#313244]">
+              <div class="text-xs font-semibold text-[#cba6f7] mb-1">2. wasm-client → web → backend</div>
+              <p class="text-xs text-[#a6adc8] leading-relaxed">Browser encapsulates DEK &amp; signs raw UTF-8 HTTP body bytes via WASM; FastAPI verifies conjunction auth and decapsulates via Cloud KMS.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: ML-KEM-768 + X25519 + AES-256-GCM Envelope Wire -->
+        <div id="drawerTabEnvelope" class="drawer-tab-pane hidden space-y-5">
+          <div class="p-4 rounded-xl bg-[#1e1e2e] border border-[#313244] space-y-2">
+            <h3 class="text-sm font-semibold text-[#cdd6f4]">Hybrid Key Derivation &amp; AEAD Binding</h3>
+            <p class="text-xs text-[#a6adc8] leading-relaxed">
+              Combines post-quantum <strong class="text-[#cba6f7]">ML-KEM-768</strong> (FIPS 203) with classical <strong class="text-[#89b4fa]">X25519</strong> ECDH via <code class="text-[#a6e3a1]">HKDF-SHA256</code> (<code class="text-[#cdd6f4]">salt=None</code>, <code class="text-[#cdd6f4]">info="firestore-hybrid-pqc-v1"</code>), binding the Firestore document path as AES-256-GCM AAD to prevent cross-document relocation attacks.
+            </p>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-[#313244]">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="bg-[#1e1e2e] text-[#a6adc8] border-b border-[#313244]">
+                  <th class="py-2.5 px-3.5 font-semibold">Envelope Field</th>
+                  <th class="py-2.5 px-3.5 font-semibold">Byte Size</th>
+                  <th class="py-2.5 px-3.5 font-semibold">Encoding / Role</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[#313244] bg-[#11111b]">
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cba6f7]">ml_kem_768_pub</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">1,184 B</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Server encapsulation key fetched from Cloud KMS</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cba6f7]">kem_ciphertext</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">1,088 B</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Base64 in JSON; implicit rejection yields pseudorandom 32B on tamper</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#89b4fa]">x25519_ephemeral_pub</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">32 B</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Base64 in JSON; per-document ephemeral X25519 public share</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#a6e3a1]">hkdf_ikm</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">64 B</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]"><code class="text-[#cdd6f4]">pq_ss (32B) || classical_ss (32B)</code> &rarr; 32B AES-256 DEK</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#fab387]">nonce</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">12 B</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">96-bit WebCrypto CSPRNG nonce</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#94e2d5]">ciphertext + tag</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">N + 16 B</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">AES-256-GCM payload authenticated with <code class="text-[#cdd6f4]">aad = doc_path</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <pre class="p-4 rounded-xl bg-[#11111b] border border-[#313244] text-xs leading-relaxed text-[#cdd6f4] overflow-x-auto">// POST /v1/firestore/seal JSON Wire Payload
+{
+  "doc_path": "projects/nsac26-a889b/databases/(default)/documents/telemetry/sat-01",
+  "kem_ciphertext_b64": "&lt;1088-byte ML-KEM-768 ciphertext&gt;",
+  "x25519_ephemeral_pub_b64": "&lt;32-byte X25519 public key&gt;",
+  "nonce_b64": "&lt;12-byte GCM IV&gt;",
+  "ciphertext_b64": "&lt;N-byte ciphertext || 16-byte GCM auth tag&gt;"
+}</pre>
+        </div>
+
+        <!-- Tab 3: Ed25519 + ML-DSA-65 Hybrid Request Auth Wire -->
+        <div id="drawerTabAuth" class="drawer-tab-pane hidden space-y-5">
+          <div class="p-4 rounded-xl bg-[#1e1e2e] border border-[#313244] space-y-2">
+            <h3 class="text-sm font-semibold text-[#cdd6f4]">Strict Conjunction (AND-Combiner) Authentication</h3>
+            <p class="text-xs text-[#a6adc8] leading-relaxed">
+              Both classical <strong class="text-[#89b4fa]">Ed25519</strong> (<code class="text-[#cdd6f4]">64 B</code>) and post-quantum <strong class="text-[#cba6f7]">ML-DSA-65</strong> (<code class="text-[#cdd6f4]">3,309 B</code>, FIPS 204) must validate independently over the canonical transcript. Both private keys are stored as compact <code class="text-[#a6e3a1]">32-byte</code> seeds in browser IndexedDB.
+            </p>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-[#313244]">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="bg-[#1e1e2e] text-[#a6adc8] border-b border-[#313244]">
+                  <th class="py-2.5 px-3.5 font-semibold">HTTP Header</th>
+                  <th class="py-2.5 px-3.5 font-semibold">Format / Size</th>
+                  <th class="py-2.5 px-3.5 font-semibold">Validation Rule</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[#313244] bg-[#11111b]">
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#89b4fa]">X-Key-Id</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">string</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Resolves Ed25519 (32B) + ML-DSA-65 (1,952B) public key bundle</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cba6f7]">X-Sig-Alg</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">ed25519+ml-dsa-65</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Constant-time equality check; bound inside signed transcript</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#fab387]">X-Timestamp</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">unix seconds</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Enforces <code class="text-[#cdd6f4]">|now - ts| &le; 60s</code> skew window</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#94e2d5]">X-Nonce</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">32-char hex (16B)</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]">Single-use CSPRNG nonce rejected on replay</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 px-3.5 font-mono text-[#a6e3a1]">X-Hybrid-Signature</td>
+                  <td class="py-2.5 px-3.5 font-mono text-[#cdd6f4]">3,373 B (URL-Safe B64)</td>
+                  <td class="py-2.5 px-3.5 text-[#a6adc8]"><code class="text-[#cdd6f4]">ed25519_sig (64B) || ml_dsa_65_sig (3309B)</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-[#a6adc8]">Canonical Transcript Signed by Rust WASM &amp; Verified by FastAPI</span>
+              <button type="button" id="copyTranscriptBtn"
+                      class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium bg-[#1e1e2e] hover:bg-[#242538] text-[#cdd6f4] border border-[#313244] hover:border-[#89b4fa] transition cursor-pointer">
+                <i data-lucide="copy" class="w-3 h-3 text-[#89b4fa]"></i>
+                <span>Copy Format</span>
+              </button>
+            </div>
+            <pre id="canonicalTranscriptCode" class="p-4 rounded-xl bg-[#11111b] border border-[#313244] text-xs leading-relaxed text-[#a6e3a1] overflow-x-auto">scheme:ed25519+ml-dsa-65
+key_id:client-edge-01
+method:POST
+target:/v1/firestore/seal
+timestamp:1795063620
+nonce:9f86d081884c7d659a2feaa0c55ad015
+content-sha256:&lt;lowercase-hex-sha256-of-raw-utf8-body&gt;</pre>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="px-6 py-3.5 bg-[#1e1e2e] border-t border-[#313244] flex items-center justify-between gap-3 text-xs text-[#a6adc8] shrink-0">
+        <span>Press <kbd class="px-1.5 py-0.5 rounded bg-[#11111b] border border-[#313244] text-[#cdd6f4]">Esc</kbd> to close</span>
+        <button id="footerCloseDrawerBtn" type="button"
+                class="px-4 py-1.5 rounded-xl font-medium bg-[#89b4fa] text-[#11111b] hover:opacity-90 transition cursor-pointer">
+          Done
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" role="status" aria-live="polite"
+       class="fixed bottom-5 right-5 z-50 pointer-events-none opacity-0 translate-y-2 bg-[#11111b] border border-[#89b4fa]/50 text-[#cdd6f4] px-4 py-2.5 rounded-xl shadow-xl text-xs sm:text-sm flex items-center gap-2">
+    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#a6e3a1]"></i>
+    <span id="toastMsg">Copied to clipboard</span>
+  </div>
+
+  <script>
+    const LINKS_DATA = [
+      // Post-Quantum Cryptography & Firestore Architecture
+      {
+        id: 'pqc-firestore-stack',
+        category: 'pqc',
+        categoryLabel: 'Post-Quantum Crypto',
+        title: 'Firestore Hybrid PQC Stack (Overview)',
+        url: 'https://github.com/axeon3?tab=repositories&q=pqc',
+        displayUrl: 'firestore-pqc-stack/ (4-Layer Architecture)',
+        description: 'End-to-end quantum-resistant Firestore envelope encryption & API authentication combining ML-KEM-768, X25519, AES-256-GCM, and hybrid Ed25519 + ML-DSA-65 signatures.',
+        tags: ['FIPS 203', 'FIPS 204', 'Firestore', 'Architecture'],
+        icon: 'shield-alert',
+        accent: '#cba6f7',
+        drawerTab: 'tree'
+      },
+      {
+        id: 'pqc-kms-terraform',
+        category: 'pqc',
+        categoryLabel: 'Post-Quantum Crypto',
+        title: 'Cloud KMS PQC Terraform (infra/terraform/)',
+        url: 'https://cloud.google.com/kms/docs/algorithms#post-quantum_cryptography',
+        displayUrl: 'infra/terraform/main.tf · ML_KEM_768 & ML_DSA_65',
+        description: 'IaC provisioning for Google Cloud KMS KEY_ENCAPSULATION (ML_KEM_768) & ASYMMETRIC_SIGN (ML_DSA_65) rings with HSM protection, PREVENT deletion locks, and least-privilege IAM.',
+        tags: ['Terraform', 'Cloud KMS', 'ML_KEM_768', 'IAM'],
+        icon: 'key-round',
+        accent: '#cba6f7',
+        drawerTab: 'tree'
+      },
+      {
+        id: 'pqc-fastapi-backend',
+        category: 'pqc',
+        categoryLabel: 'Post-Quantum Crypto',
+        title: 'FastAPI Envelope & Conjunction Verifier (backend/)',
+        url: 'https://cryptography.io/en/latest/hazmat/primitives/asymmetric/mldsa/',
+        displayUrl: 'backend/app/crypto/{envelope.py,hybrid_auth.py}',
+        description: 'Python HybridEnvelopeCrypto (CRC32C KMS decapsulation + HKDF-SHA256 + AES-256-GCM AAD path binding), strict AND-combiner Ed25519 + ML-DSA-65 request auth, and adversarial pytest suite.',
+        tags: ['Python', 'FastAPI', 'ML-DSA-65', 'pytest'],
+        icon: 'lock',
+        accent: '#cba6f7',
+        drawerTab: 'envelope'
+      },
+      {
+        id: 'pqc-rust-wasm',
+        category: 'pqc',
+        categoryLabel: 'Post-Quantum Crypto',
+        title: 'Rust WebAssembly Client & TS Wrapper (wasm-client/)',
+        url: 'https://github.com/RustCrypto/KEMs',
+        displayUrl: 'wasm-client/src/{lib.rs,auth.rs} + sealAndPost.ts',
+        description: 'Browser-side Rust WASM crate compiled via wasm-pack for zero-private-key client envelope sealing, 32-byte seed keygen, and canonical Ed25519 + ML-DSA-65 HTTP request signing.',
+        tags: ['Rust', 'WebAssembly', 'TypeScript', 'SHA-256 CI'],
+        icon: 'cpu',
+        accent: '#cba6f7',
+        drawerTab: 'auth'
+      },
+
+      // Apps & Live Sites
+      {
+        id: 'app-a2asl',
+        category: 'apps',
+        categoryLabel: 'Apps & Live Sites',
+        title: 'A2ASL',
+        url: 'https://sites.google.com/view/a2asl/full-page-embed',
+        displayUrl: 'sites.google.com/view/a2asl/full-page-embed',
+        description: 'Interactive web application hosted on Google Sites.',
+        tags: ['App', 'Google Sites', 'Web'],
+        icon: 'app-window',
+        accent: '#a6e3a1'
+      },
+      {
+        id: 'app-lunax-cloudrun',
+        category: 'apps',
+        categoryLabel: 'Apps & Live Sites',
+        title: 'LUNA-X Web App (Cloud Run)',
+        url: 'https://ais-dev-grzbiomzlv3dutcwf63ypg-650936582116.us-east1.run.app',
+        displayUrl: 'ais-dev-...us-east1.run.app',
+        description: 'CLPS Lunar Landing Site & Hardware Protection Engine hosted on Google Cloud Run (us-east1).',
+        tags: ['LUNA-X', 'Cloud Run', 'AI Studio', 'NASA'],
+        icon: 'rocket',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'app-axeon3-io',
+        category: 'apps',
+        categoryLabel: 'Apps & Live Sites',
+        title: 'axeon3.io Exhibition Hub',
+        url: 'https://axeon3.github.io/axeon3.io/',
+        displayUrl: 'axeon3.github.io/axeon3.io/',
+        description: 'GitHub Pages exhibition hub showcasing NASA datasets and Google infrastructure projects.',
+        tags: ['GitHub Pages', 'Portfolio', 'Exhibition'],
+        icon: 'globe',
+        accent: '#cba6f7'
+      },
+
+      // GitHub Profile & Owned Repos
+      {
+        id: 'repo-profile',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'GitHub Profile (@axeon3)',
+        url: 'https://github.com/axeon3',
+        displayUrl: 'github.com/axeon3',
+        description: 'Primary GitHub profile for Acxel Rodriguez (9 public repositories, @teamaxe member).',
+        tags: ['GitHub', 'Profile'],
+        icon: 'github',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'repo-axeon3-io',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'axeon3/axeon3.io',
+        url: 'https://github.com/axeon3/axeon3.io',
+        displayUrl: 'github.com/axeon3/axeon3.io',
+        description: 'Source repository for the axeon3.io GitHub Pages exhibition site.',
+        tags: ['GitHub Pages', 'HTML', 'CI/CD'],
+        icon: 'folder-git-2',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'repo-neo-t',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'axeon3/neo-t',
+        url: 'https://github.com/axeon3/neo-t',
+        displayUrl: 'github.com/axeon3/neo-t',
+        description: 'neocs — TypeScript project repository.',
+        tags: ['TypeScript', 'neocs'],
+        icon: 'code-2',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'repo-neo',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'axeon3/neo',
+        url: 'https://github.com/axeon3/neo',
+        displayUrl: 'github.com/axeon3/neo',
+        description: 'Core neo repository with DevSecOps CI/CD gates.',
+        tags: ['DevSecOps', 'CI/CD'],
+        icon: 'git-branch',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'repo-yml',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'axeon3/yml',
+        url: 'https://github.com/axeon3/yml',
+        displayUrl: 'github.com/axeon3/yml',
+        description: 'Python automation and configuration repository.',
+        tags: ['Python', 'YAML'],
+        icon: 'file-code',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'repo-1nnl',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'axeon3/1nnl-',
+        url: 'https://github.com/axeon3/1nnl-',
+        displayUrl: 'github.com/axeon3/1nnl-',
+        description: 'Owned GitHub repository under @axeon3.',
+        tags: ['GitHub', 'Repo'],
+        icon: 'git-branch',
+        accent: '#89b4fa'
+      },
+      {
+        id: 'repo-1',
+        category: 'repos',
+        categoryLabel: 'GitHub Repos',
+        title: 'axeon3/1',
+        url: 'https://github.com/axeon3/1',
+        displayUrl: 'github.com/axeon3/1',
+        description: 'Owned GitHub repository under @axeon3.',
+        tags: ['GitHub', 'Repo'],
+        icon: 'git-branch',
+        accent: '#89b4fa'
+      },
+
+      // Forked & Upstream Security / AI Repos
+      {
+        id: 'fork-github-mcp',
+        category: 'forks',
+        categoryLabel: 'Forks & Security',
+        title: 'axeon3/github-mcp-server',
+        url: 'https://github.com/axeon3/github-mcp-server',
+        displayUrl: 'github.com/axeon3/github-mcp-server',
+        description: 'Fork of github/github-mcp-server (Go) — GitHub\'s official Model Context Protocol server.',
+        tags: ['Go', 'MCP', 'Fork'],
+        icon: 'server',
+        accent: '#cba6f7'
+      },
+      {
+        id: 'fork-antigravity',
+        category: 'forks',
+        categoryLabel: 'Forks & Security',
+        title: 'axeon3/antigravity-sdk-python',
+        url: 'https://github.com/axeon3/antigravity-sdk-python',
+        displayUrl: 'github.com/axeon3/antigravity-sdk-python',
+        description: 'Fork of google-antigravity/antigravity-sdk-python — Python library for AI agents.',
+        tags: ['Python', 'AI Agents', 'Fork'],
+        icon: 'cpu',
+        accent: '#cba6f7'
+      },
+      {
+        id: 'fork-oss-fuzz',
+        category: 'forks',
+        categoryLabel: 'Forks & Security',
+        title: 'axeon3/oss-fuzz',
+        url: 'https://github.com/axeon3/oss-fuzz',
+        displayUrl: 'github.com/axeon3/oss-fuzz',
+        description: 'Fork of frontyard/oss-fuzz (Shell) — Continuous fuzzing for open-source software.',
+        tags: ['Security', 'Fuzzing', 'Shell'],
+        icon: 'shield-check',
+        accent: '#cba6f7'
+      },
+      {
+        id: 'fork-bughunters',
+        category: 'forks',
+        categoryLabel: 'Forks & Security',
+        title: 'axeon3/bughunters',
+        url: 'https://github.com/axeon3/bughunters',
+        displayUrl: 'github.com/axeon3/bughunters',
+        description: 'Fork of google/bughunters — Vulnerability research and bug bounty resources.',
+        tags: ['Security', 'Google', 'Fork'],
+        icon: 'bug',
+        accent: '#cba6f7'
+      },
+
+      // Team Axe & NASA Space Apps
+      {
+        id: 'teamaxe-org',
+        category: 'teamaxe',
+        categoryLabel: 'Team Axe & NASA',
+        title: 'Team Axe Organization (@teamaxe)',
+        url: 'https://github.com/teamaxe',
+        displayUrl: 'github.com/teamaxe',
+        description: 'GitHub organization for Team Axe (2026 NASA Space Apps Challenge — San José).',
+        tags: ['Organization', 'NASA Space Apps'],
+        icon: 'users',
+        accent: '#94e2d5'
+      },
+      {
+        id: 'teamaxe-lunax',
+        category: 'teamaxe',
+        categoryLabel: 'Team Axe & NASA',
+        title: 'teamaxe/Luna-X',
+        url: 'https://github.com/teamaxe/Luna-X',
+        displayUrl: 'github.com/teamaxe/Luna-X',
+        description: 'Public TypeScript/React/Vite + Firebase/Express web app for LUNA-X lunar landing site navigation.',
+        tags: ['TypeScript', 'React', 'Firebase', 'LUNA-X'],
+        icon: 'moon',
+        accent: '#94e2d5'
+      },
+      {
+        id: 'teamaxe-lunar',
+        category: 'teamaxe',
+        categoryLabel: 'Team Axe & NASA',
+        title: 'teamaxe/lunar',
+        url: 'https://github.com/teamaxe/lunar',
+        displayUrl: 'github.com/teamaxe/lunar',
+        description: 'Public Python telemetry pipeline template ingesting LRO LOLA DEMs, SPICE kernels, and JPL Horizons.',
+        tags: ['Python', 'SPICE', 'LRO LOLA', 'Pipeline'],
+        icon: 'satellite',
+        accent: '#94e2d5'
+      },
+      {
+        id: 'nasa-challenges-2026',
+        category: 'teamaxe',
+        categoryLabel: 'Team Axe & NASA',
+        title: '2026 NASA Space Apps Challenges',
+        url: 'https://www.spaceappschallenge.org/2026/challenges/',
+        displayUrl: 'spaceappschallenge.org/2026/challenges/',
+        description: 'Official 2026 NASA Space Apps Challenge portal (Challenge #10: Lunar Landing Site Navigator).',
+        tags: ['NASA', 'Challenge #10', '2026'],
+        icon: 'sparkles',
+        accent: '#94e2d5'
+      },
+
+      // Community & PRs
+      {
+        id: 'pr-github-mcp-3582',
+        category: 'community',
+        categoryLabel: 'Community & PRs',
+        title: 'github/github-mcp-server PR #3582',
+        url: 'https://github.com/github/github-mcp-server/pull/3582',
+        displayUrl: 'github.com/github/github-mcp-server/pull/3582',
+        description: 'Pull request by @axeon3 updating CodeQL, Dependabot, and agentic autofix workflows.',
+        tags: ['Pull Request', 'MCP', 'CodeQL'],
+        icon: 'git-pull-request',
+        accent: '#fab387'
+      },
+      {
+        id: 'disc-nasa-1932',
+        category: 'community',
+        categoryLabel: 'Community & PRs',
+        title: 'NASA Space Apps Discussion #1932',
+        url: 'https://github.com/nasa/spaceapps/discussions/1932',
+        displayUrl: 'github.com/nasa/spaceapps/discussions/1932',
+        description: 'Community discussion on hackathon tools, frameworks, and NASA APIs.',
+        tags: ['Discussion', 'NASA Space Apps'],
+        icon: 'message-square',
+        accent: '#fab387'
+      },
+      {
+        id: 'disc-nasa-1925',
+        category: 'community',
+        categoryLabel: 'Community & PRs',
+        title: 'NASA Space Apps Discussion #1925',
+        url: 'https://github.com/nasa/spaceapps/discussions/1925',
+        displayUrl: 'github.com/nasa/spaceapps/discussions/1925',
+        description: 'Guidance on accessing data.nasa.gov, api.nasa.gov, and jpl.nasa.gov datasets.',
+        tags: ['Discussion', 'NASA Data'],
+        icon: 'database',
+        accent: '#fab387'
+      },
+      {
+        id: 'disc-nasa-1899',
+        category: 'community',
+        categoryLabel: 'Community & PRs',
+        title: 'NASA Space Apps Discussion #1899',
+        url: 'https://github.com/nasa/spaceapps/discussions/1899',
+        displayUrl: 'github.com/nasa/spaceapps/discussions/1899',
+        description: 'Community thread supporting participants with team formation.',
+        tags: ['Discussion', 'Community'],
+        icon: 'message-circle',
+        accent: '#fab387'
+      },
+
+      // Contact & Channels
+      {
+        id: 'contact-email',
+        category: 'contact',
+        categoryLabel: 'Contact & Channels',
+        title: 'Direct Email',
+        url: 'mailto:axeonetwothree@gmail.com',
+        displayUrl: 'axeonetwothree@gmail.com',
+        description: 'Primary email contact for Acxel Rodriguez (axeon3).',
+        tags: ['Email', 'Direct'],
+        icon: 'mail',
+        accent: '#a6e3a1'
+      },
+      {
+        id: 'contact-googlegroup',
+        category: 'contact',
+        categoryLabel: 'Contact & Channels',
+        title: 'axeon3 announcements',
+        url: 'mailto:axeon3@googlegroups.com',
+        displayUrl: 'axeon3@googlegroups.com',
+        description: 'Team mailing list and group coordination address.',
+        tags: ['Google Group', 'Team Axe'],
+        icon: 'at-sign',
+        accent: '#a6e3a1'
+      },
+      {
+        id: 'contact-slack',
+        category: 'contact',
+        categoryLabel: 'Contact & Channels',
+        title: 'Team Axe Slack Workspace',
+        url: 'https://axe-cyd1855.slack.com',
+        displayUrl: 'axe-cyd1855.slack.com',
+        description: 'Slack workspace for Team Axe engineering & hackathon coordination.',
+        tags: ['Slack', 'Workspace'],
+        icon: 'hash',
+        accent: '#a6e3a1'
+      }
+    ];
+
+    const CATEGORY_ORDER = ['pqc', 'apps', 'repos', 'forks', 'teamaxe', 'community', 'contact'];
+    const CATEGORY_TITLES = {
+      pqc: 'Post-Quantum Cryptography & Firestore Stack',
+      apps: 'Apps & Live Sites',
+      repos: 'GitHub Profile & Owned Repositories',
+      forks: 'Forked & Security / AI Repositories',
+      teamaxe: 'Team Axe & 2026 NASA Space Apps',
+      community: 'Open-Source PRs & Discussions',
+      contact: 'Contact & Team Channels'
+    };
+
+    const state = {
+      activeCategory: 'all',
+      searchQuery: '',
+      activeDrawerTab: 'tree'
+    };
+
+    let toastTimer = null;
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = message;
+      toast.classList.remove('opacity-0', 'translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-2');
+      }, 2200);
+    }
+
+    function copyText(text, label) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(label || 'Copied to clipboard');
+        }).catch(() => fallbackCopy(text, label));
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        showToast(label || 'Copied to clipboard');
+      } catch (err) {
+        showToast('Unable to copy automatically');
+      }
+      document.body.removeChild(textarea);
+    }
+
+    // Drawer Controls
+    function setDrawerTab(tabKey) {
+      state.activeDrawerTab = tabKey;
+      document.querySelectorAll('.drawer-tab-btn').forEach((btn) => {
+        const isActive = btn.dataset.drawerTab === tabKey;
+        btn.classList.toggle('border-[#cba6f7]', isActive);
+        btn.classList.toggle('text-[#cba6f7]', isActive);
+        btn.classList.toggle('font-semibold', isActive);
+        btn.classList.toggle('border-transparent', !isActive);
+        btn.classList.toggle('text-[#a6adc8]', !isActive);
+        btn.classList.toggle('font-medium', !isActive);
+      });
+
+      document.getElementById('drawerTabTree').classList.toggle('hidden', tabKey !== 'tree');
+      document.getElementById('drawerTabEnvelope').classList.toggle('hidden', tabKey !== 'envelope');
+      document.getElementById('drawerTabAuth').classList.toggle('hidden', tabKey !== 'auth');
+    }
+
+    function openPqcDrawer(initialTab = 'tree') {
+      const root = document.getElementById('pqcDrawerRoot');
+      const backdrop = document.getElementById('pqcDrawerBackdrop');
+      const panel = document.getElementById('pqcDrawerPanel');
+
+      setDrawerTab(initialTab);
+      root.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+
+      requestAnimationFrame(() => {
+        backdrop.classList.remove('opacity-0');
+        backdrop.classList.add('opacity-100');
+        panel.classList.remove('translate-x-full');
+        panel.classList.add('translate-x-0');
+      });
+    }
+
+    function closePqcDrawer() {
+      const root = document.getElementById('pqcDrawerRoot');
+      const backdrop = document.getElementById('pqcDrawerBackdrop');
+      const panel = document.getElementById('pqcDrawerPanel');
+
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0');
+      panel.classList.remove('translate-x-0');
+      panel.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+
+      setTimeout(() => {
+        root.classList.add('hidden');
+      }, 240);
+    }
+
+    function getFilteredLinks() {
+      const q = state.searchQuery.trim().toLowerCase();
+      return LINKS_DATA.filter((item) => {
+        const matchesCat = state.activeCategory === 'all' || item.category === state.activeCategory;
+        if (!matchesCat) return false;
+        if (!q) return true;
+        const haystack = [
+          item.title,
+          item.description,
+          item.url,
+          item.displayUrl,
+          item.categoryLabel,
+          ...item.tags
+        ].join(' ').toLowerCase();
+        return haystack.includes(q);
+      });
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function render() {
+      const filtered = getFilteredLinks();
+      const container = document.getElementById('linksContainer');
+      const emptyState = document.getElementById('emptyState');
+      const visibleCount = document.getElementById('visibleCount');
+      const totalCount = document.getElementById('totalCount');
+      const clearBtn = document.getElementById('clearSearchBtn');
+
+      visibleCount.textContent = String(filtered.length);
+      totalCount.textContent = String(LINKS_DATA.length);
+      clearBtn.classList.toggle('hidden', state.searchQuery.length === 0);
+
+      // Update category pills
+      document.querySelectorAll('.cat-btn').forEach((btn) => {
+        const isActive = btn.dataset.cat === state.activeCategory;
+        btn.classList.toggle('pill-active', isActive);
+        btn.classList.toggle('pill-inactive', !isActive);
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        if (window.lucide) window.lucide.createIcons();
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+
+      const grouped = {};
+      CATEGORY_ORDER.forEach((cat) => { grouped[cat] = []; });
+      filtered.forEach((item) => {
+        if (grouped[item.category]) grouped[item.category].push(item);
+      });
+
+      const sectionsHtml = CATEGORY_ORDER
+        .filter((cat) => grouped[cat].length > 0)
+        .map((cat) => {
+          const items = grouped[cat];
+          const cardsHtml = items.map((item) => {
+            const tagsHtml = item.tags
+              .map((tag) => `<span class="px-2 py-0.5 rounded-md text-[11px] font-medium bg-[#11111b] text-[#a6adc8] border border-[#313244]">${escapeHtml(tag)}</span>`)
+              .join('');
+
+            const isMailto = item.url.startsWith('mailto:');
+            const targetAttrs = isMailto ? '' : 'target="_blank" rel="noopener noreferrer"';
+
+            const inspectBtnHtml = item.drawerTab
+              ? `<button type="button" data-open-drawer-tab="${escapeHtml(item.drawerTab)}"
+                         class="inspect-spec-btn inline-flex items-center gap-1 text-xs font-semibold text-[#cba6f7] hover:text-[#89b4fa] transition shrink-0 cursor-pointer">
+                   <i data-lucide="file-code-2" class="w-3.5 h-3.5"></i>
+                   <span>Spec</span>
+                 </button>`
+              : '';
+
+            return `
+              <article class="card-surface rounded-2xl p-5 flex flex-col justify-between gap-4">
+                <div>
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <div class="w-10 h-10 rounded-xl bg-[#11111b] border border-[#313244] flex items-center justify-center shrink-0">
+                        <i data-lucide="${escapeHtml(item.icon)}" class="w-5 h-5" style="color: ${escapeHtml(item.accent)}"></i>
+                      </div>
+                      <div class="min-w-0">
+                        <h3 class="text-sm sm:text-base font-semibold text-[#cdd6f4] truncate">${escapeHtml(item.title)}</h3>
+                        <p class="text-xs text-[#89b4fa] truncate font-mono">${escapeHtml(item.displayUrl)}</p>
+                      </div>
+                    </div>
+                    <button type="button" data-copy-url="${escapeHtml(item.url)}" data-copy-title="${escapeHtml(item.title)}"
+                            title="Copy URL" aria-label="Copy URL for ${escapeHtml(item.title)}"
+                            class="copy-card-btn p-2 rounded-lg bg-[#11111b] hover:bg-[#242538] text-[#a6adc8] hover:text-[#cdd6f4] border border-[#313244] transition shrink-0 cursor-pointer">
+                      <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                    </button>
+                  </div>
+                  <p class="text-xs sm:text-sm text-[#a6adc8] mt-3 leading-relaxed">${escapeHtml(item.description)}</p>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 pt-2 border-t border-[#313244]/70">
+                  <div class="flex flex-wrap gap-1.5">${tagsHtml}</div>
+                  <div class="flex items-center gap-3 shrink-0 ml-2">
+                    ${inspectBtnHtml}
+                    <a href="${escapeHtml(item.url)}" ${targetAttrs}
+                       class="inline-flex items-center gap-1 text-xs font-semibold text-[#89b4fa] hover:text-[#cba6f7] transition shrink-0">
+                      <span>Open</span>
+                      <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            `;
+          }).join('');
+
+          return `
+            <section>
+              <div class="flex items-center justify-between mb-3.5">
+                <h2 class="text-sm sm:text-base font-semibold tracking-wide uppercase text-[#a6adc8]">${escapeHtml(CATEGORY_TITLES[cat])}</h2>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-[#1e1e2e] border border-[#313244] text-[#a6adc8]">${items.length}</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                ${cardsHtml}
+              </div>
+            </section>
+          `;
+        })
+        .join('');
+
+      container.innerHTML = sectionsHtml;
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    // Event Listeners
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      state.searchQuery = e.target.value;
+      render();
+    });
+
+    document.getElementById('clearSearchBtn').addEventListener('click', () => {
+      state.searchQuery = '';
+      document.getElementById('searchInput').value = '';
+      render();
+    });
+
+    document.getElementById('resetFiltersBtn').addEventListener('click', () => {
+      state.activeCategory = 'all';
+      state.searchQuery = '';
+      document.getElementById('searchInput').value = '';
+      render();
+    });
+
+    document.getElementById('categoryTabs').addEventListener('click', (e) => {
+      const btn = e.target.closest('.cat-btn');
+      if (!btn) return;
+      state.activeCategory = btn.dataset.cat;
+      render();
+    });
+
+    document.getElementById('linksContainer').addEventListener('click', (e) => {
+      const copyBtn = e.target.closest('.copy-card-btn');
+      if (copyBtn) {
+        copyText(copyBtn.dataset.copyUrl, `Copied ${copyBtn.dataset.copyTitle} URL`);
+        return;
+      }
+      const specBtn = e.target.closest('.inspect-spec-btn');
+      if (specBtn) {
+        openPqcDrawer(specBtn.dataset.openDrawerTab || 'tree');
+      }
+    });
+
+    // Drawer Event Listeners
+    document.getElementById('openPqcDrawerBtn').addEventListener('click', () => openPqcDrawer('tree'));
+    document.getElementById('closePqcDrawerBtn').addEventListener('click', closePqcDrawer);
+    document.getElementById('footerCloseDrawerBtn').addEventListener('click', closePqcDrawer);
+    document.getElementById('pqcDrawerBackdrop').addEventListener('click', closePqcDrawer);
+
+    document.querySelectorAll('.drawer-tab-btn').forEach((btn) => {
+      btn.addEventListener('click', () => setDrawerTab(btn.dataset.drawerTab));
+    });
+
+    document.getElementById('copyTreeBtn').addEventListener('click', () => {
+      const treeText = document.getElementById('pqcFileTreeCode').textContent;
+      copyText(treeText, 'Copied firestore-pqc-stack file tree');
+    });
+
+    document.getElementById('copyTranscriptBtn').addEventListener('click', () => {
+      const transcriptText = document.getElementById('canonicalTranscriptCode').textContent;
+      copyText(transcriptText, 'Copied canonical signature transcript');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !document.getElementById('pqcDrawerRoot').classList.contains('hidden')) {
+        closePqcDrawer();
+      }
+    });
+
+    document.getElementById('copyEmailBtn').addEventListener('click', () => {
+      copyText('axeonetwothree@gmail.com', 'Copied axeonetwothree@gmail.com');
+    });
+
+    document.getElementById('copyMarkdownBtn').addEventListener('click', () => {
+      const filtered = getFilteredLinks();
+      if (filtered.length === 0) {
+        showToast('No visible links to copy');
+        return;
+      }
+      const md = filtered.map((item) => `- [${item.title}](${item.url})`).join('\n');
+      copyText(md, `Copied ${filtered.length} links as Markdown`);
+    });
+
+    document.getElementById('exportJsonBtn').addEventListener('click', () => {
+      const filtered = getFilteredLinks();
+      const payload = JSON.stringify(filtered.map(({ title, categoryLabel, url, description, tags }) => ({
+        title, category: categoryLabel, url, description, tags
+      })), null, 2);
+      const blob = new Blob([payload], { type: 'application/json' });
+      const blobUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = 'axeon3_links.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(blobUrl);
+      showToast(`Exported ${filtered.length} links to JSON`);
+    });
+
+    // Initial render
+    render();
+  </script>
 </body>
 </html>
