@@ -1,4 +1,376 @@
-<!DOCTYPE html>
+NASA Space Apps Challenge 2026 — Lunar Landing Site Navigator
+Team Axe — Credits, Acknowledgments & Cited Sources
+​Mission credits, NASA Space Apps Challenge organizers, planetary ephemeris & lunar topography APIs, and project deliverables for teamaxe/Luna-X (https://github.com/teamaxe/Luna-X) and teamaxe/lunar (https://github.com/teamaxe/lunar).
+​[ 1. Featured ]   [ 2. Space Apps ]   [ 3. NASA Data ]   [ 4. Platforms ]   [ 5. Recognition ]   [ 6. Deliverables ]   [ 7. Team ]   [ 8. Reflections ]
+​================================================================================
+​1. Featured Group — Space Apps Team, NASA, Google & VTA
+================================================================================
+• Space Apps Team & Global Organizing (GO) Team
+https://www.spaceappschallenge.org/
+https://www.spaceappschallenge.org/contact-us/
+​• NASA (National Aeronautics and Space Administration)
+https://www.nasa.gov/ | https://api.nasa.gov/ | https://data.nasa.gov/
+​• Google (Gemini, Google AI Studio, Google DeepMind & 2026 Global Collaborator)
+https://gemini.google.com/ | https://aistudio.google.com/ | https://deepmind.google/
+​• Santa Clara Valley Transportation Authority (VTA)
+More than drivers to us; sometimes they were the only shed of light when things got dark and hopeless, keeping public transit moving and connecting our local communities.
+​================================================================================
+2. NASA Space Apps Challenge 2026 — Directorate Sponsors, GO Team & Local Event
+​NASA Directorate Sponsors
+​• NASA Earth Science Division (ESD) & Science Mission Directorate (SMD)
+• NASA Space Technology Mission Directorate (STMD) & Exploration Systems Development Mission Directorate (ESDMD)
+• NASA Heliophysics & Planetary Science Divisions
+https://science.nasa.gov/ | https://www.nasa.gov/directorates/
+​Global Organizing (GO) Team & All Support Staff
+​• NASA Space Apps Global Organizing (GO) Team & All Support Staff
+https://www.spaceappschallenge.org/contact-us/
+Contact: info@spaceappschallenge.org
+Thank you to the entire GO Team and all event, technical, operational, and community support staff supporting builders worldwide.
+​San José Local Event
+​• Cathy Lei (@cathoryn, San José Local Event Lead) & San José Local Event Organizers, Support Staff, Mentors, Judges & Volunteers
+https://www.spaceappschallenge.org/2026/local-events/san-jose-ca/
+Contact: catherine@komplex.health
+​Challenge & Program Links
+​• NASA Space Apps Challenge Official Portal & Alternate Domain
+https://www.spaceappschallenge.org/
+https://www.nasaspaceappschallenge.org/
+Contact: info@spaceappschallenge.org
+​• Challenge #10: Lunar Landing Site Navigator & 2026 Challenges
+https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/
+https://www.spaceappschallenge.org/2026/challenges/
+​• 2026 Local Events, Find a Team, Resources Hub & Team Formation Guide
+https://www.spaceappschallenge.org/2026/local-events/
+https://www.spaceappschallenge.org/2026/find-a-team/
+https://www.spaceappschallenge.org/resources/
+https://www.spaceappschallenge.org/resources/team-formation-guide/
+​Partners & Collaborators
+​• 2026 Global Collaborators: GoDaddy, Google, Meteomatics, Microsoft, Miro
+https://www.spaceappschallenge.org/2026/
+​• 2026 Space Agency Partners: ISRO, ESA, JAXA, CSA, UK Space Agency, and 17 global space agency partners
+https://www.spaceappschallenge.org/2026/space-agency-partners/
+​================================================================================
+3. NASA APIs, Planetary Ephemeris & Lunar Data Sources
+​Core NASA API & Data Portals
+​• NASA Open APIs Portal                    | https://api.nasa.gov/
+• Updated APOD API Endpoint                | https://science.nasa.gov/wp-json/wp/v2/apod-basic
+• NASA Open Data Portal (Datasets)         | https://data.nasa.gov/ | https://data.nasa.gov/dataset/
+• NASA Image and Video Library             | https://images.nasa.gov/
+​Planetary, Lunar & JPL Ephemeris APIs
+​• JPL SSD/CNEOS API Service                | https://ssd-api.jpl.nasa.gov/
+• JPL Horizons On-Line Ephemeris System    | https://ssd.jpl.nasa.gov/horizons/
+• JPL Horizons REST API                    | https://ssd-api.jpl.nasa.gov/doc/horizons.html
+• JPL Horizons File API                    | https://ssd-api.jpl.nasa.gov/doc/horizons_file.html
+• JPL Horizons Lookup API                  | https://ssd-api.jpl.nasa.gov/doc/horizons_lookup.html
+• JPL SBDB (Small-Body DataBase) API       | https://ssd-api.jpl.nasa.gov/doc/sbdb.html
+• NASA Solar System Treks                  | https://trek.nasa.gov/
+• Moon Trek Portal                         | https://trek.nasa.gov/moon/
+• Moon Trek WMTS API Index & Docs          | https://trek.nasa.gov/tiles/apidoc/index.html | https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=moon
+• NASA/JPL Planetary Ephemerides DE440/441 | https://ssd.jpl.nasa.gov/doc/de440_de441.html
+• NASA NAIF Generic Planetary SPK Kernels  | https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/
+​Lunar Topography & Thermal Ground Truth
+​• NASA PDS Geosciences — LRO LOLA Data     | https://pds-geosciences.wustl.edu/missions/lro/lola.htm
+• NASA PDS Geosciences — LRO Mission       | https://pds-geosciences.wustl.edu/missions/lro/
+• NASA PDS Geosciences — Moon Archives     | https://pds-geosciences.wustl.edu/dataserv/moon.html
+• USGS Astrogeology — LRO LOLA DEM 118m    | https://astrogeology.usgs.gov/search/map/moon_lro_lola_dem_118m
+• USGS Astrogeology STAC API               | https://stac.astrogeology.usgs.gov/api/
+• NASA PGDA — Product 95                   | https://pgda.gsfc.nasa.gov/products/95
+​Earth Science & Satellite Imagery APIs
+​• Earthdata GIBS API                       | https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api
+• Earthdata CMR Search API                 | https://cmr.earthdata.nasa.gov/search/site/docs/search/api
+• Earthdata CMR STAC API                   | https://cmr.earthdata.nasa.gov/stac/docs/index.html
+​================================================================================
+4. Platforms, AI Research & Browser Acknowledgments
+​• Gemini, Gemini for Research (Google AI Studio), and Gemini Deep Research
+https://gemini.google.com/ | https://aistudio.google.com/docs/gemini-for-research | https://aistudio.google.com/docs/deep-research
+​• Google DeepMind, Google DeepMind Publications, and Gemini Models
+https://deepmind.google/ | https://deepmind.google/research/publications/ | https://deepmind.google/models/gemini/
+​• Google Support & Community and Google Open Research Tools (Google Dataset Search, Google Scholar, Google Cloud Public Datasets, Google Workspace)
+https://support.google.com/gemini/
+​• Android Team
+https://www.android.com/
+​• Mozilla, Firefox Browser, Firefox for Android, Mozilla Support, and Mozilla Community Hub
+https://www.mozilla.org/ | https://www.firefox.com/ | https://www.firefox.com/download/android/ | https://support.mozilla.org/en-US/ | https://support.mozilla.org/community/
+​• GitHub (teamaxe/Luna-X & teamaxe/lunar) — version control, GitHub Actions CI/CD, and GitHub Pages hosting
+https://github.com/teamaxe/Luna-X | https://github.com/teamaxe/lunar
+​• WhatsApp — real-time team messaging and engineering coordination
+https://www.whatsapp.com/
+​================================================================================
+5. Service & Community Recognition
+​We express our deepest gratitude and recognition to the men and women currently serving and who have served—both in uniform and across public and community service—whose unwavering dedication, sacrifice, and continued support safeguard the foundational environment that enables open scientific exploration, public service, and collaborative innovation worldwide.
+​Emergency Response & Public Safety
+​• San José Police Department (SJPD) — Maintaining public safety and serving our neighborhoods.
+• San José Fire Department (SJFD) & Emergency Medical Technicians (EMTs) — Providing life-saving emergency medical response, paramedic care, rescue operations, and fire protection.
+• Santa Clara County EMS & First Responders — Supporting pre-hospital emergency care and rapid medical response across the county.
+• Santa Clara County Office of Emergency Management — Coordinating region-wide disaster preparedness and emergency response operations.
+​Social Workers, Public Health & Human Services
+​• Santa Clara County Social Services Agency & Social Workers — Supporting individuals, families, and vulnerable community members with essential care, advocacy, and stability.
+• Public Health & Community Outreach Workers — Ensuring equitable access to health resources, crisis support, and community well-being.
+​Transit, Municipal Operations, Support Staff & Public Infrastructure
+​• Santa Clara Valley Transportation Authority (VTA) — More than drivers to us; sometimes they were the only shed of light when things got dark and hopeless, keeping public transit moving and connecting our local communities.
+• San José Department of Transportation (DOT) — Managing city roadway infrastructure, traffic engineering, and mobility safety.
+• San José Environmental Services Department (ESD) — Preserving clean water, recycling, waste management, and sustainability.
+• San José Public Works — Maintaining vital civic facilities and public infrastructure.
+• San José Water & Municipal Utilities — Ensuring reliable water and essential utility services.
+• San José Public Library (SJPL) & Parks, Recreation and Neighborhood Services (PRNS) — Fostering learning spaces, public technology access, and resilient community spaces.
+• All Public Servants, Civic Employees & Support Staff — Every municipal, county, state, federal, and venue support staff member keeping communities and events running safely, cleanly, and smoothly.
+​Personal, Household & Neighborhood Support
+​• Roommates, Landlord, Family & Friends — For ongoing support, patience, hospitality, and daily encouragement.
+• Peach Court Neighbors & Surrounding Neighborhood Community ("Go Peach Ct!") — For being supportive, welcoming neighbors and fostering a strong, resilient local community.
+• Friends We Didn't Know We Had — We may not know their names, we just feel they are looking after us—to the unexpected allies, kind strangers, and quiet helpers whose unseen goodwill and support showed up right when it mattered most.
+• Confidential Friends & Supporters — Those who remain unnamed out of respect for anonymity and confidentiality, whose encouragement and support helped make this work possible.
+​================================================================================
+6. Project Documentation & Deliverablesadd at the end: Gayathri -Hackathon Journey Reflection
+1. What inspired your team to choose this project?
+We were inspired by the growing momentum of NASA's Commercial Lunar Payload Services (CLPS) program and the exciting prospect of sustained human and robotic exploration of the Moon. We wanted to build something that went beyond simply displaying mission information. Our vision was to create an interactive lunar landing-site navigator that brings together mission data, 3D lunar visualization, terrain analysis, and environmental factors such as sunlight availability and Earth visibility. We wanted to make complex lunar mission information easier to explore while addressing challenges that future lunar missions may encounter.
+2. What did your team learn during the hackathon?
+We gained valuable experience combining geospatial data processing, scientific computing, and modern web technologies into one application. We learned how NASA's LOLA elevation datasets can be processed into terrain profiles and 360-degree horizon information, and how JPL Horizons data can help analyze Sun and Earth positions relative to lunar landing sites. We also learned the importance of lunar-specific coordinate transformations, integrating multiple data sources, and designing interactive 3D visualizations that make complex scientific information accessible.
+3. What roadblocks did your team encounter, and how did you overcome them?
+
+One of our biggest challenges was bringing together large NASA lunar elevation datasets, external REST APIs, and astronomical calculations into a unified application. LOLA elevation datasets have different resolutions and geographic coverage, and some files are several gigabytes in size. We addressed this by developing a dedicated Python terrain-processing engine using Rasterio, NumPy, and PyProj to process site-specific elevation data and generate 360-degree terrain horizon profiles, which we integrated into the application for terrain-aware analysis.
+
+Another challenge was integrating NASA/JPL Horizons through its REST API to retrieve accurate Sun and Earth positions relative to specific lunar landing coordinates. We had to handle API query construction, response parsing, coordinate reference frames, request timeouts, and the processing of time-series data. We also explored NASA's NAIF SPICE toolkit through SpiceyPy, which requires the appropriate planetary and lunar kernels to calculate celestial positions locally. Supporting both approaches helped us build flexibility into our ephemeris engine, with an analytical synthetic fallback for testing when live API access or SPICE kernels were unavailable.
+
+We also faced challenges in connecting scientific computations with the interactive 3D visualization and ensuring that lunar-specific coordinate transformations and terrain calculations were consistent across components. By breaking the system into modular engines, validating calculations independently, and integrating the components incrementally, we overcame these challenges and developed a comprehensive lunar landing-site analysis platform.
+
+-----Mariam's Reflection-----
+
+About the Project:
+I truly believe our project is one of the strongest and most relevant projects for NASA Space Apps. Out of all the projects I have seen so far, ours stands out for its innovation and real-world impact. Congratulations team, we have created something truly amazing.
+
+About the Team:
+This has been one of the most amazing teams I have worked with. Everyone was collaborative and committed throughout the hackathon. There was a slight communication gap at times, but apart from that, everything was exceptional.
+
+About the Team Lead:
+Axe, you have been an amazing team lead. You showed great responsibility and effort, made sure everyone got to contribute their part, and ensured we had everything we needed for the project.
+
+One Suggestion:
+Moving forward, it would be even better if we finalize every detail within the hackathon timeline.
+
+Axe - Special thanks to my frienda i did not know i had. To those that have amd to those we have lost this is for you. Thanks. -axeNASA Space Apps Challenge 2026 — Lunar Landing Site Navigator
+Team Axe — Credits, Acknowledgments & Cited Sources
+
+Mission credits, NASA Space Apps Challenge organizers, planetary ephemeris & lunar topography APIs, and project deliverables for teamaxe/Luna-X (https://github.com/teamaxe/Luna-X) and teamaxe/lunar (https://github.com/teamaxe/lunar).
+
+[ 1. Featured ]   [ 2. Space Apps ]   [ 3. NASA Data ]   [ 4. Platforms ]   [ 5. Recognition ]   [ 6. Deliverables ]   [ 7. Team ]
+
+================================================================================
+1. Featured Group — Space Apps Team, NASA, Google & VTA
+================================================================================
+  • Space Apps Team & Global Organizing (GO) Team
+    https://www.spaceappschallenge.org/
+    https://www.spaceappschallenge.org/contact-us/
+
+  • NASA (National Aeronautics and Space Administration)
+    https://www.nasa.gov/ | https://api.nasa.gov/ | https://data.nasa.gov/
+
+  • Google (Gemini, Google AI Studio, Google DeepMind & 2026 Global Collaborator)
+    https://gemini.google.com/ | https://aistudio.google.com/ | https://deepmind.google/
+
+  • Santa Clara Valley Transportation Authority (VTA)
+    More than drivers to us; sometimes they were the only shed of light when things got dark and hopeless, keeping public transit moving and connecting our local communities.
+
+
+================================================================================
+2. NASA Space Apps Challenge 2026 — Directorate Sponsors, GO Team & Local Event
+================================================================================
+
+NASA Directorate Sponsors
+--------------------------------------------------------------------------------
+  • NASA Earth Science Division (ESD) & Science Mission Directorate (SMD)
+  • NASA Space Technology Mission Directorate (STMD) & Exploration Systems Development Mission Directorate (ESDMD)
+  • NASA Heliophysics & Planetary Science Divisions
+    https://science.nasa.gov/ | https://www.nasa.gov/directorates/
+
+Global Organizing (GO) Team & All Support Staff
+--------------------------------------------------------------------------------
+  • NASA Space Apps Global Organizing (GO) Team & All Support Staff
+    https://www.spaceappschallenge.org/contact-us/
+    Contact: info@spaceappschallenge.org
+    Thank you to the entire GO Team and all event, technical, operational, and community support staff supporting builders worldwide.
+
+San José Local Event
+--------------------------------------------------------------------------------
+  • Cathy Lei (@cathoryn, San José Local Event Lead) & San José Local Event Organizers, Support Staff, Mentors, Judges & Volunteers
+    https://www.spaceappschallenge.org/2026/local-events/san-jose-ca/
+    Contact: catherine@komplex.health
+
+Challenge & Program Links
+--------------------------------------------------------------------------------
+  • NASA Space Apps Challenge Official Portal & Alternate Domain
+    https://www.spaceappschallenge.org/
+    https://www.nasaspaceappschallenge.org/
+    Contact: info@spaceappschallenge.org
+
+  • Challenge #10: Lunar Landing Site Navigator & 2026 Challenges
+    https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/
+    https://www.spaceappschallenge.org/2026/challenges/
+
+  • 2026 Local Events, Find a Team, Resources Hub & Team Formation Guide
+    https://www.spaceappschallenge.org/2026/local-events/
+    https://www.spaceappschallenge.org/2026/find-a-team/
+    https://www.spaceappschallenge.org/resources/
+    https://www.spaceappschallenge.org/resources/team-formation-guide/
+
+Partners & Collaborators
+--------------------------------------------------------------------------------
+  • 2026 Global Collaborators: GoDaddy, Google, Meteomatics, Microsoft, Miro
+    https://www.spaceappschallenge.org/2026/
+
+  • 2026 Space Agency Partners: ISRO, ESA, JAXA, CSA, UK Space Agency, and 17 global space agency partners
+    https://www.spaceappschallenge.org/2026/space-agency-partners/
+
+
+================================================================================
+3. NASA APIs, Planetary Ephemeris & Lunar Data Sources
+================================================================================
+
+Core NASA API & Data Portals
+--------------------------------------------------------------------------------
+  • NASA Open APIs Portal                    | https://api.nasa.gov/
+  • Updated APOD API Endpoint                | https://science.nasa.gov/wp-json/wp/v2/apod-basic
+  • NASA Open Data Portal (Datasets)         | https://data.nasa.gov/ | https://data.nasa.gov/dataset/
+  • NASA Image and Video Library             | https://images.nasa.gov/
+
+Planetary, Lunar & JPL Ephemeris APIs
+--------------------------------------------------------------------------------
+  • JPL SSD/CNEOS API Service                | https://ssd-api.jpl.nasa.gov/
+  • JPL Horizons On-Line Ephemeris System    | https://ssd.jpl.nasa.gov/horizons/
+  • JPL Horizons REST API                    | https://ssd-api.jpl.nasa.gov/doc/horizons.html
+  • JPL Horizons File API                    | https://ssd-api.jpl.nasa.gov/doc/horizons_file.html
+  • JPL Horizons Lookup API                  | https://ssd-api.jpl.nasa.gov/doc/horizons_lookup.html
+  • JPL SBDB (Small-Body DataBase) API       | https://ssd-api.jpl.nasa.gov/doc/sbdb.html
+  • NASA Solar System Treks                  | https://trek.nasa.gov/
+  • Moon Trek Portal                         | https://trek.nasa.gov/moon/
+  • Moon Trek WMTS API Index & Docs          | https://trek.nasa.gov/tiles/apidoc/index.html | https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=moon
+  • NASA/JPL Planetary Ephemerides DE440/441 | https://ssd.jpl.nasa.gov/doc/de440_de441.html
+  • NASA NAIF Generic Planetary SPK Kernels  | https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/
+
+Lunar Topography & Thermal Ground Truth
+--------------------------------------------------------------------------------
+  • NASA PDS Geosciences — LRO LOLA Data     | https://pds-geosciences.wustl.edu/missions/lro/lola.htm
+  • NASA PDS Geosciences — LRO Mission       | https://pds-geosciences.wustl.edu/missions/lro/
+  • NASA PDS Geosciences — Moon Archives     | https://pds-geosciences.wustl.edu/dataserv/moon.html
+  • USGS Astrogeology — LRO LOLA DEM 118m    | https://astrogeology.usgs.gov/search/map/moon_lro_lola_dem_118m
+  • USGS Astrogeology STAC API               | https://stac.astrogeology.usgs.gov/api/
+  • NASA PGDA — Product 95                   | https://pgda.gsfc.nasa.gov/products/95
+
+Earth Science & Satellite Imagery APIs
+--------------------------------------------------------------------------------
+  • Earthdata GIBS API                       | https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api
+  • Earthdata CMR Search API                 | https://cmr.earthdata.nasa.gov/search/site/docs/search/api
+  • Earthdata CMR STAC API                   | https://cmr.earthdata.nasa.gov/stac/docs/index.html
+
+
+================================================================================
+4. Platforms, AI Research & Browser Acknowledgments
+================================================================================
+  • Gemini, Gemini for Research (Google AI Studio), and Gemini Deep Research
+    https://gemini.google.com/ | https://aistudio.google.com/docs/gemini-for-research | https://aistudio.google.com/docs/deep-research
+
+  • Google DeepMind, Google DeepMind Publications, and Gemini Models
+    https://deepmind.google/ | https://deepmind.google/research/publications/ | https://deepmind.google/models/gemini/
+
+  • Google Support & Community and Google Open Research Tools (Google Dataset Search, Google Scholar, Google Cloud Public Datasets, Google Workspace)
+    https://support.google.com/gemini/
+
+  • Android Team
+    https://www.android.com/
+
+  • Mozilla, Firefox Browser, Firefox for Android, Mozilla Support, and Mozilla Community Hub
+    https://www.mozilla.org/ | https://www.firefox.com/ | https://www.firefox.com/download/android/ | https://support.mozilla.org/en-US/ | https://support.mozilla.org/community/
+
+  • GitHub (teamaxe/Luna-X & teamaxe/lunar) — version control, GitHub Actions CI/CD, and GitHub Pages hosting
+    https://github.com/teamaxe/Luna-X | https://github.com/teamaxe/lunar
+
+  • WhatsApp — real-time team messaging and engineering coordination
+    https://www.whatsapp.com/
+
+
+================================================================================
+5. Service & Community Recognition
+================================================================================
+We express our deepest gratitude and recognition to the men and women currently serving and who have served—both in uniform and across public and community service—whose unwavering dedication, sacrifice, and continued support safeguard the foundational environment that enables open scientific exploration, public service, and collaborative innovation worldwide.
+
+Emergency Response & Public Safety
+--------------------------------------------------------------------------------
+  • San José Police Department (SJPD) — Maintaining public safety and serving our neighborhoods.
+  • San José Fire Department (SJFD) & Emergency Medical Technicians (EMTs) — Providing life-saving emergency medical response, paramedic care, rescue operations, and fire protection.
+  • Santa Clara County EMS & First Responders — Supporting pre-hospital emergency care and rapid medical response across the county.
+  • Santa Clara County Office of Emergency Management — Coordinating region-wide disaster preparedness and emergency response operations.
+
+Social Workers, Public Health & Human Services
+--------------------------------------------------------------------------------
+  • Santa Clara County Social Services Agency & Social Workers — Supporting individuals, families, and vulnerable community members with essential care, advocacy, and stability.
+  • Public Health & Community Outreach Workers — Ensuring equitable access to health resources, crisis support, and community well-being.
+
+Transit, Municipal Operations, Support Staff & Public Infrastructure
+--------------------------------------------------------------------------------
+  • Santa Clara Valley Transportation Authority (VTA) — More than drivers to us; sometimes they were the only shed of light when things got dark and hopeless, keeping public transit moving and connecting our local communities.
+  • San José Department of Transportation (DOT) — Managing city roadway infrastructure, traffic engineering, and mobility safety.
+  • San José Environmental Services Department (ESD) — Preserving clean water, recycling, waste management, and sustainability.
+  • San José Public Works — Maintaining vital civic facilities and public infrastructure.
+  • San José Water & Municipal Utilities — Ensuring reliable water and essential utility services.
+  • San José Public Library (SJPL) & Parks, Recreation and Neighborhood Services (PRNS) — Fostering learning spaces, public technology access, and resilient community spaces.
+  • All Public Servants, Civic Employees & Support Staff — Every municipal, county, state, federal, and venue support staff member keeping communities and events running safely, cleanly, and smoothly.
+
+Personal, Household & Neighborhood Support
+--------------------------------------------------------------------------------
+  • Roommates, Landlord, Family & Friends — For ongoing support, patience, hospitality, and daily encouragement.
+  • Peach Court Neighbors & Surrounding Neighborhood Community ("Go Peach Ct!") — For being supportive, welcoming neighbors and fostering a strong, resilient local community.
+  • Friends We Didn't Know We Had — We may not know their names, we just feel they are looking after us—to the unexpected allies, kind strangers, and quiet helpers whose unseen goodwill and support showed up right when it mattered most.
+  • Confidential Friends & Supporters — Those who remain unnamed out of respect for anonymity and confidentiality, whose encouragement and support helped make this work possible.
+
+
+================================================================================
+6. Project Documentation & Deliverables
+================================================================================
+Deliverable Name         | Description / Resource Link
+-------------------------|----------------------------------------------------------------------
+LUNA-X Documentation     | https://docs.google.com/document/d/1cGaUMiCatlcYqYfnbMZ60ELPyeOt0sCCLiOORopyihM/edit?usp=drivesdk&ouid=106689454861232589463
+Comprehensive Wrap-Up    | https://docs.google.com/document/d/18CeNYepbv-9dKYKDlKvGwEuJApGe3yiqNHj5f32Immc/edit?usp=drivesdk&ouid=106689454861232589463
+Mission Case Study       | https://docs.google.com/document/d/1RKwAZztL1ZWAL4fzMiFeHo3q-9UGOXwBX1TyczCivh0/edit?usp=drivesdk&ouid=106689454861232589463
+Contacts & Directory     | https://docs.google.com/document/d/13KASG-zUXyIw4zTflhBrdQULvWQYbZGHGZKAJES2B8E/edit?usp=drivesdk&ouid=106689454861232589463
+Presentation Deck        | https://docs.google.com/presentation/d/1MeMGyCZw3GhvjZomodLHBMZVkVDraq944YGxbJ3spGY/edit?usp=drivesdk&ouid=106689454861232589463
+Team Axe Official Page   | https://www.spaceappschallenge.org/2026/find-a-team/axe/
+
+
+================================================================================
+7. Team Axe Credits
+================================================================================
+Project Submission Tab: https://www.spaceappschallenge.org/2026/find-a-team/axe/?tab=project
+GitHub Repository (Luna-X): https://github.com/teamaxe/Luna-X
+GitHub Repository (lunar): https://github.com/teamaxe/lunar
+
+Core Team Roster
+--------------------------------------------------------------------------------
+  • @axeon3          | https://github.com/axeon3
+  • @gsrini3         | https://github.com/gsrini3
+  • @priyajitpaul275 | https://github.com/priyajitpaul275
+  • @mariamtahir     | https://github.com/mariamtahir
+Hackathon Journey Reflection
+1. What inspired your team to choose this project?
+We were inspired by the growing momentum of NASA's Commercial Lunar Payload Services (CLPS) program and the exciting prospect of sustained human and robotic exploration of the Moon. We wanted to build something that went beyond simply displaying mission information. Our vision was to create an interactive lunar landing-site navigator that brings together mission data, 3D lunar visualization, terrain analysis, and environmental factors such as sunlight availability and Earth visibility. We wanted to make complex lunar mission information easier to explore while addressing challenges that future lunar missions may encounter.
+2. What did your team learn during the hackathon?
+We gained valuable experience combining geospatial data processing, scientific computing, and modern web technologies into one application. We learned how NASA's LOLA elevation datasets can be processed into terrain profiles and 360-degree horizon information, and how JPL Horizons data can help analyze Sun and Earth positions relative to lunar landing sites. We also learned the importance of lunar-specific coordinate transformations, integrating multiple data sources, and designing interactive 3D visualizations that make complex scientific information accessible.
+3. What roadblocks did your team encounter, and how did you overcome them?
+
+One of our biggest challenges was bringing together large NASA lunar elevation datasets, external REST APIs, and astronomical calculations into a unified application. LOLA elevation datasets have different resolutions and geographic coverage, and some files are several gigabytes in size. We addressed this by developing a dedicated Python terrain-processing engine using Rasterio, NumPy, and PyProj to process site-specific elevation data and generate 360-degree terrain horizon profiles, which we integrated into the application for terrain-aware analysis.
+
+Another challenge was integrating NASA/JPL Horizons through its REST API to retrieve accurate Sun and Earth positions relative to specific lunar landing coordinates. We had to handle API query construction, response parsing, coordinate reference frames, request timeouts, and the processing of time-series data. We also explored NASA's NAIF SPICE toolkit through SpiceyPy, which requires the appropriate planetary and lunar kernels to calculate celestial positions locally. Supporting both approaches helped us build flexibility into our ephemeris engine, with an analytical synthetic fallback for testing when live API access or SPICE kernels were unavailable.
+
+We also faced challenges in connecting scientific computations with the interactive 3D visualization and ensuring that lunar-specific coordinate transformations and terrain calculations were consistent across components. By breaking the system into modular engines, validating calculations independently, and integrating the components incrementally, we overcame these challenges and developed a comprehensive lunar landing-site analysis platform.-----Mariam's Reflection-----
+
+About the Project:
+I truly believe our project is one of the strongest and most relevant projects for NASA Space Apps. Out of all the projects I have seen so far, ours stands out for its innovation and real-world impact. Congratulations team, we have created something truly amazing.
+
+About the Team:
+This has been one of the most amazing teams I have worked with. Everyone was collaborative and committed throughout the hackathon. There was a slight communication gap at times, but apart from that, everything was exceptional.
+
+About the Team Lead:
+Axe, you have been an amazing team lead. You showed great responsibility and effort, made sure everyone got to contribute their part, and ensured we had everything we needed for the project.
+
+One Suggestion:
+Moving forward, it would be even better if we finalize every detail within the hackathon timeline.Un<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -1167,7 +1539,7 @@ content-sha256:&lt;lowercase-hex-sha256-of-raw-utf8-body&gt;</pre>
     });
 
     // Initial render
-    render();
+    rend
   </script>
 </body>
 </html>
